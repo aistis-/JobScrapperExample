@@ -1,0 +1,6 @@
+services:
+    acme_job.fetcher:
+        class: Acme\JobBundle\Fetcher\Fetcher
+        arguments:
+            - '@acme_job.scrapper'
+            - '@doctrine.orm.entity_manager'

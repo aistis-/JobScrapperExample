@@ -1,0 +1,6 @@
+services:
+    acme_job.factory.job:
+        class: Acme\JobBundle\Factory\JobFactory
+        arguments:
+            - '@acme_job.guesser.experience'
+

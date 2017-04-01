@@ -1,0 +1,7 @@
+services:
+    acme_job.command.crawler:
+        class: Acme\JobBundle\Command\FetchCommand
+        arguments:
+            - '@acme_job.fetcher'
+        tags:
+            - { name: console.command }

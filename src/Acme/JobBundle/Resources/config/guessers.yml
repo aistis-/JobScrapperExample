@@ -1,0 +1,3 @@
+services:
+    acme_job.guesser.experience:
+        class: Acme\JobBundle\Guesser\ExperienceGuesser

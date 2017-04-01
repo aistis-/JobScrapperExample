@@ -1,0 +1,23 @@
+Acme\JobBundle\Entity\Job:
+    type: entity
+    table: acme_job
+    fields:
+        id:
+            id: true
+            type: integer
+            generator:
+                strategy: auto
+        headline:
+            type: string
+            lenght: 256
+        url:
+            type: string
+            lenght: 512
+        description:
+            type: text
+        experienceRequired:
+            type: boolean
+        yearsOfExperienceRequired:
+            type: integer
+        createdAt:
+            type: datetime

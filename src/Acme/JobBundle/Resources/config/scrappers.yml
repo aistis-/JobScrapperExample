@@ -1,0 +1,8 @@
+services:
+    acme_job.scrapper:
+        class: Acme\JobBundle\Scrapper\SpotifyScrapper
+        arguments:
+            - '@acme_job.client.crawler'
+            - '@acme_job.factory.job'
+            - 'https://www.spotify.com/lt/jobs/opportunities/all/all/new-york-ny-united-states/'
+
